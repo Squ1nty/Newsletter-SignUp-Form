@@ -1,0 +1,61 @@
+@media (max-width: 375px){
+  #contentContainer{
+    padding: 1.5rem;
+    color: hsl(234, 29%, 20%);
+  }
+  #headingAndDescContainer{
+    padding: 1rem 0;
+  }
+  #mainPageHeading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 1.25rem;
+  }
+  #mainPageDesc{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  #dotPointContainer{
+    display: grid;
+    grid-template-columns: 21px 1fr;
+    gap: 1rem;
+    font-size: 1rem;
+
+    padding-bottom: 1.5rem;
+  }
+
+  #formContainer{
+    padding: 1rem 0;
+  }
+  #emailInputLabel{
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  #emailInputContainer{
+    padding: 0.5rem 0;
+  }
+  #emailInput{
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 1rem 1.35rem;
+    border-radius: 0.6rem;
+    border: 1px solid hsl(0, 0%,58%);
+
+    font-size: 1rem;
+  }
+  #submitBtn{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+
+    border-radius: 0.6rem;
+    border: none;
+
+    font-size: 1rem;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+  }
+}

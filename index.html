@@ -11,6 +11,11 @@
   <link rel="stylesheet" href="./css/mainLogin.css">
   <link rel="stylesheet" href="./css/successPage.css">
   <link rel="stylesheet" href="./css/footer.css">
+
+  <!-- Roboto Font-Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
@@ -35,11 +40,12 @@
           <p id="mainPageDotPoint3">And much more!</p>
         </div>
         <form id="formContainer" novalidate>
-          <div id="emailInputContainer">
-            <label for="emailInput">Email Address</label>
+          <div id="emailInputLabelContainer">
+            <label id="emailInputLabel" for="emailInput">Email Address</label>
             <label id="errorMsg" for="emailInput"></label>
-            <input id="emailInput" type="email" name="emailInput" required>
-
+          </div>
+          <div id="emailInputContainer">
+            <input id="emailInput" type="email" name="emailInput" placeholder="email@company.com" required>
           </div>
           <button id="submitBtn" type="submit">Subscribe to monthly newsletter</button>
         </form>
