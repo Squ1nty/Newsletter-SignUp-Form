@@ -65,13 +65,13 @@ form.addEventListener("submit", (e) =>{
   }
 
   userEmailConfirmation.textContent = emailInput.value;
-  mainLoginPage.style.display = "none";
-  successPage.style.display = "block";
+  mainLoginPage.classList.toggle("active");
+  successPage.classList.toggle("active");
 });
 
 dismissBtn.addEventListener("click", (e) => {
-  successPage.style.display = "none";
-  mainLoginPage.style.display = "block";
+  successPage.classList.toggle("active");
+  mainLoginPage.classList.remove("active");
 
   window.location.reload();
 })

@@ -1,3 +1,41 @@
-#successPage{
-  display: none;
+@media(max-width: 375px){
+  #successPage{
+    display: none;
+  }
+  #successPage.active{
+    height: 100dvh;
+    padding: 1.5rem;
+  
+    display: grid;
+    grid-template-rows: 1fr 2fr 0.55fr;
+    gap: 2rem;
+  }
+  #tickSVG{
+    align-self: end;
+  }
+  #successPageContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    color: hsl(234, 29%, 20%);
+  }
+  #successPageHeading{
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+  #confirmationMsg{
+    font-size: 0.9rem;
+  }
+  #userEmailConfirmation{
+    font-weight: 700;
+  }
+  #dismissBtn{
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(234, 29%, 20%);
+  }
 }

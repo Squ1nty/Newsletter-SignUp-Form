@@ -1,4 +1,11 @@
 @media (max-width: 375px){
+  /* mainLoginPage */
+  #mainLoginPage{
+    display: block;
+  }
+  #mainLoginPage.active{
+    display: none;
+  }
   #contentContainer{
     padding: 1.5rem;
     color: hsl(234, 29%, 20%);
