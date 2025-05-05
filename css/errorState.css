@@ -1,0 +1,7 @@
+.error-State #emailInput:invalid{
+  background-color: hsl(3, 100%, 93%);
+  border-color: hsl(4, 100%, 67%);
+}
+.error-State #emailInput:invalid::placeholder{
+  color: hsl(4, 100%, 67%);
+}

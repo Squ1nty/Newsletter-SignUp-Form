@@ -55,12 +55,14 @@ form.addEventListener("submit", (e) =>{
     else if(emailInput.validity.valueMissing){
       errorMsg.textContent = "Input field required";
     }
+    form.classList.add("error-State");
     return;
   }
 
   emailCheck = emailInput.value;
   if(!emailCheck.endsWith(".com")){
     errorMsg.textContent = "Valid email required";
+    form.classList.add("error-State");
     return;
   }
 
@@ -74,4 +76,4 @@ dismissBtn.addEventListener("click", (e) => {
   mainLoginPage.classList.remove("active");
 
   window.location.reload();
-})
+});

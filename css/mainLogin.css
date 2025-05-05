@@ -35,23 +35,21 @@
   #formContainer{
     padding: 1rem 0;
   }
-  #emailInputLabel{
+  #emailInputLabelContainer{
+    display: flex;
+    justify-content: space-between;
+  }
+  #emailInputLabel, #errorMsg{
     font-size: 0.75rem;
     font-weight: 700;
+  }
+  #errorMsg{
+    color: hsl(4, 100%, 67%);
   }
   #emailInputContainer{
     padding: 0.5rem 0;
   }
-  #emailInput{
-    width: 100%;
-    box-sizing: border-box;
-
-    padding: 1rem 1.35rem;
-    border-radius: 0.6rem;
-    border: 1px solid hsl(0, 0%,58%);
-
-    font-size: 1rem;
-  }
+  
   #submitBtn{
     width: 100%;
     box-sizing: border-box;
@@ -64,5 +62,37 @@
     font-size: 1rem;
     background-color: hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
+
+    cursor: pointer;
   }
+}
+
+#emailInput{
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 1rem 1.35rem;
+  border-radius: 0.6rem;
+  border: 1px solid hsl(0, 0%,58%);
+
+  font-size: 1rem;
+  cursor: pointer;
+}
+#emailInput:active{
+  border: 1px solid hsl(234, 29%, 20%);
+}
+#emailInput:focus{
+  outline: none;
+  border: 1px solid hsl(234, 29%, 20%);
+}
+
+#submitBtn:active{
+  background-image: linear-gradient(to right, hsl(352, 91%, 65%), hsl(12, 100%, 62%));
+  box-shadow: 0 5px 15px hsl(4, 100%, 67%);
+  transition: background 0.5s;
+}
+#submitBtn:hover{
+  background-image: linear-gradient(to right, hsl(352, 91%, 65%), hsl(12, 100%, 62%));
+  box-shadow: 0 5px 15px hsl(4, 100%, 67%);
+  transition: background 0.5s;
 }
