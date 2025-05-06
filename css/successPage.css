@@ -39,21 +39,21 @@
   cursor: pointer;
 }
 
-@media(max-width: 375px){
+@media(max-width: 1439px){
   #successPage.active{
     height: 100dvh;
   }
   #tickSVG{
     align-self: end;
   }
-  
   #successPageHeading{
     font-size: 2.25rem;
   }
 }
 
-@media(min-width: 376px){
+@media(min-width: 1440px){
   #successPage.active{
+    height: auto;
     width: 25rem;
     padding: 3rem;
     grid-template-rows: 64px 2fr 0.55fr;
