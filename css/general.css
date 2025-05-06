@@ -3,3 +3,15 @@
   margin: 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
+main{
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(min-width: 376px){
+  main{
+    background-color: hsl(234, 29%, 20%);
+  }
+}

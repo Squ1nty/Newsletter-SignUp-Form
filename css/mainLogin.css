@@ -1,78 +1,34 @@
-@media (max-width: 375px){
-  /* mainLoginPage */
-  #mainLoginPage{
-    display: block;
-  }
-  #mainLoginPage.active{
-    display: none;
-  }
-  #mobileIllustration{
-    display: block;
-  }
-  #desktopIllustration{
-    display: none;
-  }
-  #contentContainer{
-    padding: 1.5rem;
-    color: hsl(234, 29%, 20%);
-  }
-  #headingAndDescContainer{
-    padding: 1rem 0;
-  }
-  #mainPageHeading{
-    font-size: 2.5rem;
-    font-weight: 700;
-    padding-bottom: 1.25rem;
-  }
-  #mainPageDesc{
-    font-size: 1rem;
-    font-weight: 400;
-  }
-
-  #dotPointContainer{
-    display: grid;
-    grid-template-columns: 21px 1fr;
-    gap: 1rem;
-    font-size: 1rem;
-
-    padding-bottom: 1.5rem;
-  }
-
-  #formContainer{
-    padding: 1rem 0;
-  }
-  #emailInputLabelContainer{
-    display: flex;
-    justify-content: space-between;
-  }
-  #emailInputLabel, #errorMsg{
-    font-size: 0.75rem;
-    font-weight: 700;
-  }
-  #errorMsg{
-    color: hsl(4, 100%, 67%);
-  }
-  #emailInputContainer{
-    padding: 0.5rem 0;
-  }
-  
-  #submitBtn{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 1rem 1rem;
-    margin-top: 1rem;
-
-    border-radius: 0.6rem;
-    border: none;
-
-    font-size: 1rem;
-    background-color: hsl(234, 29%, 20%);
-    color: hsl(0, 0%, 100%);
-
-    cursor: pointer;
-  }
+#mainLoginPage{
+  background-color: white;
+}
+#mainLoginPage.active{
+  display: none;
+}
+#contentContainer{
+  padding: 1.5rem;
+  color: hsl(234, 29%, 20%);
+}
+#headingAndDescContainer{
+  padding: 1rem 0;
+}
+#mainPageHeading{
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 1.25rem;
+}
+#mainPageDesc{
+  font-size: 1rem;
+  font-weight: 400;
 }
 
+#dotPointContainer{
+  display: grid;
+  grid-template-columns: 21px 1fr;
+  gap: 1rem;
+  font-size: 1rem;
+
+  padding-bottom: 1.5rem;
+}
 #emailInput{
   width: 100%;
   box-sizing: border-box;
@@ -91,8 +47,40 @@
   outline: none;
   border: 1px solid hsl(234, 29%, 20%);
 }
+#formContainer{
+  padding: 1rem 0;
+}
+#emailInputLabelContainer{
+  display: flex;
+  justify-content: space-between;
+}
+#emailInputLabel, #errorMsg{
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+#errorMsg{
+  color: hsl(4, 100%, 67%);
+}
+#emailInputContainer{
+  padding: 0.5rem 0;
+}
 
-#submitBtn:active{
+#submitBtn{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+
+  border-radius: 0.6rem;
+  border: none;
+
+  font-size: 1rem;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+
+  cursor: pointer;
+}
+#submitBtn:focus{
   background-image: linear-gradient(to right, hsl(352, 91%, 65%), hsl(12, 100%, 62%));
   box-shadow: 0 5px 15px hsl(4, 100%, 67%);
   transition: background 0.5s;
@@ -101,4 +89,42 @@
   background-image: linear-gradient(to right, hsl(352, 91%, 65%), hsl(12, 100%, 62%));
   box-shadow: 0 5px 15px hsl(4, 100%, 67%);
   transition: background 0.5s;
+}
+
+@media (max-width: 375px){
+  /* mainLoginPage */
+  #mainLoginPage{
+    display: block;
+  }
+  #mobileIllustration{
+    display: block;
+  }
+  #desktopIllustration{
+    display: none;
+  }
+}
+
+@media(min-width: 376px){
+  #mainLoginPage{
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding: 1.25rem 1.25rem 1.25rem 0;
+    border-radius: 30px;
+  }
+  #mobileIllustration{
+    display: none;
+  }
+  #desktopIllustration{
+    display: block;
+  }
+  #contentContainer{
+    width: 25rem;
+    padding: 1.5rem 4rem;
+    align-self: center;
+    justify-self: center;
+  }
+  #mainPageHeading{
+    font-size: 3.5rem;
+  }
 }
