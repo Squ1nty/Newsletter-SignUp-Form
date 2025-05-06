@@ -6,6 +6,12 @@
   #mainLoginPage.active{
     display: none;
   }
+  #mobileIllustration{
+    display: block;
+  }
+  #desktopIllustration{
+    display: none;
+  }
   #contentContainer{
     padding: 1.5rem;
     color: hsl(234, 29%, 20%);
