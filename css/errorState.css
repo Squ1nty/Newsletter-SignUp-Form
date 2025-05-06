@@ -5,3 +5,6 @@
 .error-State #emailInput:invalid::placeholder{
   color: hsl(4, 100%, 67%);
 }
+.error-State #emailInput:invalid:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 1000px hsl(3, 100%, 93%) inset !important;
+}
