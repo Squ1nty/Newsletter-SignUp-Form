@@ -93,21 +93,14 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN WebDocs Client-Side Form Validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation) - This page really helped me in providing a step by step resource to gradually learn the ins-and-outs of form validation. In future, I will definitely continue to use MDN WebDocs as a guide thanks to their simple to understand yet extensive database of information.
+- Outside of this website, with obvious help from quick google searches, countless hours on stackOverflow and other threads, I was able to learn and discover new techniques to solve this challenge.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub - [@Squ1nty](https://github.com/Squ1nty)
+- Frontend Mentor - [@Squ1nty](https://www.frontendmentor.io/profile/Squ1nty)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I wanted to thank all those who provided me helpful advice in my previous projects, as I believe I was better able to adhere to industry standards and workflows this time around as compared to older projects. Examples of growth include: usage of alt and aria-label attributes in HTML, proficient use of media queries when styling for a mobile-first approach and being able to create a efficient and elegant JavaScript implementation to provide itneractivity for the form.
