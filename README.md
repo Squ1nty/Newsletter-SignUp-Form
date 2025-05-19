@@ -43,53 +43,61 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repo](https://github.com/Squ1nty/Newsletter-SignUp-Form)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/Squ1nty/Newsletter-SignUp-Form)
+- Live Site URL: [Live Site](https://your-live-site-url.com)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS custom properties (Media Queries, -Webkit-)
 - Flexbox
 - CSS Grid
+- JavaScript
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I encountered many challenges in this challenge actually. First, I had to deal with -webkit- issues that kept overriding my CSS, which I eventually learnt (through a good hour of reading) how to fix.
 
-To see how you can add code snippets, see below:
+Regarding JS, I also encountered an issue with using the validity() method, only to realise I was missing the validityCheck() method call prior to using any other valid() methods. All issues were overcome through reading and learning of new materials.
 
+Code Snippets I am most proud of:
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" alt="customTickDotPoint"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.error-State #emailInput:invalid:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 1000px hsl(3, 100%, 93%) inset !important;
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+form.addEventListener("submit", (e) =>{
+  e.preventDefault();
+
+  errorMsg.textContent = "";
+
+  if(!emailInput.checkValidity()){
+    if(emailInput.validity.typeMismatch){
+      errorMsg.textContent = "Valid email required";
+    }
+    else if(emailInput.validity.valueMissing){
+      errorMsg.textContent = "Input field required";
+    }
+    form.classList.add("error-State");
+    return;
+  }
+
+  userEmailConfirmation.textContent = emailInput.value;
+  mainLoginPage.classList.toggle("active");
+  successPage.classList.toggle("active");
+});
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Next time, I would continue to work on developing my CSS responsiveness skills to better build my website without having to go back and forth fixing formatting issues at the end. Outside of this, I will continue to master my HTML, CSS and JavaScript skills as a whole; learning more advanced concepts as I progress.
 
 ### Useful resources
 
